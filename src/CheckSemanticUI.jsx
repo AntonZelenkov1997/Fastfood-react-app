@@ -31,7 +31,7 @@ export const CheckSemanticUI = () => {
             <Switch>
                 <Route
                     path = "/workingRouter"
-                    component = { CheckRouter }
+                    render={(props) => <CheckRouter {...props} className="styleForRouter" />}
                 />
                 <Route
                     path = "/checkingUIFirst"
